@@ -8,6 +8,7 @@ echo "How many days before your demobilization date..."
 read -p "please input your demobilization date(YYYYMMDD,ex>20161226)" date2
 
 #2
+# P393 [0-9]: num 0~9; \{8\}= 8
 date_d=$(echo $date2 | grep '[0-9]\{8\}') #看是否有8个数字
 if [ "$date_d" == "" ];then
 	echo "Input the wrong date format!"
@@ -15,11 +16,12 @@ if [ "$date_d" == "" ];then
 fi
 
 #3
+# declare 和 typeset 是一样的功能，就是在『 宣告变量的类型』P373
 declare -i date_dem=`date --date="$date2" +%s` #退伍日期S
 declare -i date_now=`date +%s` #现在日期S
 declare -i date_total=$(($date_dem-$date_now)) #剩余S
 declare -i date_d=$(($date_total/60/60/24)) #转换为day
-
+# -lt: less than
 if [ "$date_total" -lt "0" ];then
 	echo "You had been demobilization before:$((-1*$date_d)) ago!"
 else

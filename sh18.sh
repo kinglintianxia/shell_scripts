@@ -3,6 +3,7 @@
 
 #1
 read -p "please input a directory:" dir
+# ! -d "$dir" eq !"test -d "$dir"
 if [ "$dir" == "" -o ! -d "$dir" ];then
 	echo "The $dir is NOT exit in your system."
 	exit 1

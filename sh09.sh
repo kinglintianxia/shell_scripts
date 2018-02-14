@@ -1,7 +1,6 @@
 #!/bin/bash
 # Check $1 is equal to "hello"
 # King 2016.12.26
-
 if [ "$1" == "hello" ];then
 	echo "Hello,how are you?"
 elif [ "$1" == "" ];then

@@ -11,12 +11,18 @@
  	* 1:exit?  2:file or directory?  3: file permissions
 # sh06.sh
 	* This program shows the user's choice(Y/y or N/n)
+# sh06-02.sh
+	* This program shows the user's choice(if then)
+# sh06-03.sh
+	* This program shows the user's choice(if elif else fi)
 # sh07.sh
 	* This program shows the script name,parameters...
 # sh08.sh
-	* This program shows the script name,parameters...
+	* Program shows the effect of shift function.
 # sh09.sh
 	* Check $1 is equal to "hello".
+# sh09-1.sh
+	* Check $1 is equal to "hello" using case...esac.
 # sh10.sh
 	* Using netstat and grep to detect WWW,SSH,FTP and Mail setvices.
 # sh11.sh

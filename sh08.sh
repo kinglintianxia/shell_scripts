@@ -1,6 +1,6 @@
 #!/bin/bash
-#This program shows the script name,parameters...
-#King 2016.12.26
+# Program shows the effect of shift function.
+# King 2016.12.26
 
 echo "Total parameter number is: $#"
 echo "Your whole parameter is: '$@'"

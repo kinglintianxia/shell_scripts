@@ -5,11 +5,11 @@
 read -p "please input(Y/N):" yn
 
 if [ "$yn" == "Y" ] || [ "$yn" == "y" ]; then
-	echo "OK,continue"
+	echo "OK,continue."
 	exit 0
 fi
 
-if [ "$yn" == "N" ] ||[ "$yn" == "n" ];then
+if [ "$yn" == "N" ] || [ "$yn" == "n" ];then
 	echo "Oh,interrupt!"
 	exit 0
 fi
